@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Post to Byte</title>
+	<link href="https://unpkg.com/tailwindcss@1.1.4/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+	<div class="rounded border shadow p-4 bg-white max-w-4xl mx-auto flex-1">
+		<form action="/post" method="POST" class="" enctype="multipart/form-data">
+			<label class="block">
+				<span class="text-gray-700">Video</span>
+				<input type="file" class="form-input mt-1 block w-full" accept="video/mp4" name="video" required>
+			</label>
+			
+			<label class="block my-4">
+				<span class="text-gray-700">Caption</span>
+				<input class="form-input mt-1 block w-full" name="caption" placeholder="Look what I made!" required>
+			</label>
+
+			<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Post to Byte</button>
+		</form>
+	</div>
+</body>
+</html>
